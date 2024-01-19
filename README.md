@@ -5,7 +5,7 @@ We will use a blend of Kanban & Scrum and a Trello board.
 
 We created a library to handle complex numbers, arithmetic tasks, input and output, and advanced mathematical tasks. 
 
-
+To see specific implementations of functions, open the **komplexkanban** folder
 
 
 ## Getting Started
@@ -129,7 +129,7 @@ Deploy executable to your live system, and ensure the functions or use cases mat
 ## Structure
 ``` text
 .
-├── komplexkanbanv3-team12
+├── komplexkanban
 │   ├── a.out
 │   ├── catch_amalgamated.o
 │   ├── lib
