@@ -249,7 +249,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* ** pqba and other teammates ** 
+* **pqba and other teammates** 
 
 See also the list of [contributors](https://github.com/LasaACP/komplexkanbanv3-team12/project/contributors) who participated in this project.
 
