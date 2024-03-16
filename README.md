@@ -32,16 +32,16 @@ Catch2 for optional tests
 
 A step by step series of examples that tell you how to get a development env running
 
-Clone the repository to your local machine using the following command:
+Clone the repository locally using the following command:
 
 ```
-git clone https://github.com/LasaACP/komplexkanbanv3-team12.git
+git clone https://github.com/pqba/ComplexLibrary.git
 ```
 
 Navigate to the project directory using shell:
 
-```
-cd komplexkanbanv3-team12
+```bash
+cd komplexkanban
 ```
 
 Create a build directory and run using a compiler:
@@ -51,7 +51,7 @@ g++ -o complex_library Complex.cpp -std=c++11
 ```
 Include the header file in your code 
 
-```
+```C++
 #include "Complex.h"
 ```
 
@@ -110,8 +110,6 @@ Randomness seeded to: 3420106309
 All tests passed (2 assertions in 1 test case)
 ```
 
-
-
 ## Deployment
 
 Use your preferred build system (e.g., Makefile, CMake) to build your project with the integrated complex number library. Ensure it is linked correctly. 
@@ -129,77 +127,73 @@ Deploy executable to your live system, and ensure the functions or use cases mat
 ## Structure
 ``` text
 .
-├── komplexkanban
-│   ├── a.out
-│   ├── catch_amalgamated.o
-│   ├── lib
-│   │   ├── complex_abs.cpp
-│   │   ├── complex_addition.cpp
-│   │   ├── complex_arg.cpp
-│   │   ├── complex_conj.cpp
-│   │   ├── complex_cos.cpp
-│   │   ├── complex_division.cpp
-│   │   ├── complex_exp.cpp
-│   │   ├── complex.h
-│   │   ├── complex_imag.cpp
-│   │   ├── complex_log10.cpp
-│   │   ├── complex_log.cpp
-│   │   ├── complex_multiplication.cpp
-│   │   ├── complex_norm.cpp
-│   │   ├── complex_plusequals.cpp
-│   │   ├── complex_polar.cpp
-│   │   ├── complex_pow.cpp
-│   │   ├── complex_real.cpp
-│   │   ├── complex_sin.cpp
-│   │   ├── complex_sqrt.cpp
-│   │   ├── complex_subtraction.cpp
-│   │   └── complex_tan.cpp
-│   ├── main
-│   ├── main-debug
-│   ├── Makefile
-│   ├── README.md
-│   ├── replit.nix
-│   ├── result -> /nix/store/ycbh5a0p3ksbynxirbs5j1rzajb901pj-nix-shell
-│   ├── src
-│   │   ├── CMakeLists.txt
-│   │   ├── fac
-│   │   ├── fac.cpp
-│   │   ├── fac.h
-│   │   ├── main.cpp
-│   │   └── main_test.cpp
-│   └── tests
-│       ├── catch_amalgamated.cpp
-│       ├── catch_amalgamated.hpp
-│       ├── catch_amalgamated.o
-│       ├── complex_abs_test.cpp
-│       ├── complex_addition_test.cpp
-│       ├── complex_arg_test.cpp
-│       ├── complex_conj_test.cpp
-│       ├── complex_cos_test.cpp
-│       ├── complex_division_test.cpp
-│       ├── complex_exp_test.cpp
-│       ├── complex_imag_test.cpp
-│       ├── complex_log10_test.cpp
-│       ├── complex_log_test.cpp
-│       ├── complex_multiplication_test.cpp
-│       ├── complex_norm_test.cpp
-│       ├── complex_plusequals_test.cpp
-│       ├── complex_polar_test.cpp
-│       ├── complex_pow_test.cpp
-│       ├── complex_real_test.cpp
-│       ├── complex_sin_test.cpp
-│       ├── complex_sqrt_test.cpp
-│       ├── complex_subtraction_test.cpp
-│       └── complex_tan_test.cpp
-├── main-debug
-├── Makefile
-├── README.md
-├── replit.nix
-├── result -> /nix/store/ycbh5a0p3ksbynxirbs5j1rzajb901pj-nix-shell
-└── tests
-    ├── catch_amalgamated.cpp
-    ├── catch_amalgamated.hpp
-    └── catch_amalgamated.o
+│   .gitignore
+│   Makefile
+│   README.md
+│
+├───komplexkanban
+│   │   catch_amalgamated.o
+│   │   main-debug
+│   │   Makefile
+│   │   README.md
+│   │
+│   ├───lib
+│   │       complex.h
+│   │       complex_abs.cpp
+│   │       complex_addition.cpp
+│   │       complex_arg.cpp
+│   │       complex_conj.cpp
+│   │       complex_cos.cpp
+│   │       complex_division.cpp
+│   │       complex_exp.cpp
+│   │       complex_imag.cpp
+│   │       complex_log.cpp
+│   │       complex_log10.cpp
+│   │       complex_multiplication.cpp
+│   │       complex_norm.cpp
+│   │       complex_plusequals.cpp
+│   │       complex_polar.cpp
+│   │       complex_pow.cpp
+│   │       complex_real.cpp
+│   │       complex_sin.cpp
+│   │       complex_sqrt.cpp
+│   │       complex_subtraction.cpp
+│   │       complex_tan.cpp
+│   │
+│   ├───src
+│   │       CMakeLists.txt
+│   │       fac.cpp
+│   │       fac.h
+│   │       main.cpp
+│   │       main_test.cpp
+│   │
+│   └───tests
+│           catch_amalgamated.cpp
+│           catch_amalgamated.hpp
+│           complex_abs_test.cpp
+│           complex_addition_test.cpp
+│           complex_arg_test.cpp
+│           complex_conj_test.cpp
+│           complex_cos_test.cpp
+│           complex_division_test.cpp
+│           complex_exp_test.cpp
+│           complex_imag_test.cpp
+│           complex_log10_test.cpp
+│           complex_log_test.cpp
+│           complex_multiplication_test.cpp
+│           complex_norm_test.cpp
+│           complex_plusequals_test.cpp
+│           complex_polar_test.cpp
+│           complex_pow_test.cpp
+│           complex_real_test.cpp
+│           complex_sin_test.cpp
+│           complex_sqrt_test.cpp
+│           complex_subtraction_test.cpp
+│           complex_tan_test.cpp
+│
+└───tests
+        catch_amalgamated.cpp
+        catch_amalgamated.hpp
 ```
 While this is an organization overview of the library, your directory tree can be generated by the linux **tree** command. If using Replit environment, you may need to add this to the REPL NIX environment (install tree.out).
 
@@ -209,30 +203,13 @@ tests go in [tests/](tests/) (compiled to `unit_tests` by default).
 If you add a new executable, say `app/hello.cpp`, you only need to add the following two lines to [CMakeLists.txt](CMakeLists.txt):
 
 ```cmake
-add_executable(komplexkanbanv3-team12/src/main.cpp)   # Name of exec. and location of file.
-target_link_libraries(main PRIVATE ${komplexkanbanv3-team12})  # Link the executable to lib built from src/*.cpp (if it uses it).
+add_executable(komplexkanban/src/main.cpp)   # Name of exec. and location of file.
+target_link_libraries(main PRIVATE ${komplexkanban})  # Link the executable to lib built from src/*.cpp (if it uses it).
 ```
 
 You can find the example source code that builds the `main` executable in [app/main.cpp](app/main.cpp) under the `Build` section in [CMakeLists.txt](CMakeLists.txt).
 If the executable you made does not use the library in [src/](src), then only the first line is needed.
 
-
-
-## Building
-
-Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and then use `make` to build the desired target.
-
-Example:
-
-```bash
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=[Debug | Coverage | Release]
-make
-./main
-make test      # Makes and runs the tests.
-make coverage  # Generate a coverage report.
-make doc       # Generate html documentation.
-```
 
 ## .gitignore
 
@@ -243,9 +220,6 @@ with the addition of ignoring the build directory (`build/`).
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
