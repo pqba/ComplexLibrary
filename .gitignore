@@ -1,0 +1,14 @@
+# IDE folders
+.vscode/
+.idea/
+# Build Directory
+build/
+# Executables
+.o
+.exe
+# Replit 
+.replit
+.ccls-cache
+.cache
+# Cache
+.DS_Store
