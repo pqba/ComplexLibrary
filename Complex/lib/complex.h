@@ -1,53 +1,43 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
+
 #include <cmath>
 
-class Complex{
+class Complex {
+   public:
+    double r;
+    double i;
 
-  public:
-  double r;
-  double i;
+    Complex() : r(0.0), i(0.0) {}
+    Complex(double realnum, double imaginarynum) : r(realnum), i(imaginarynum) {}
 
+    // Member functions that modify the object
+    Complex operator+(Complex rhs);
+    Complex operator-(Complex rhs);
+    Complex operator*(Complex rhs);
+    Complex operator/(Complex rhs);
 
-  Complex()
-{
-  r = 0.0;
-  i = 0.0;
-    
-  }
-  Complex(double realnum,double imaginarynum){
+    void operator+=(Complex rhs);
+    void operator-=(Complex rhs);
+    void operator*=(Complex rhs);
+    void operator/=(Complex rhs);
+};
 
-    r = realnum;
-    i = imaginarynum;
-    
-  }
+double real(Complex x);
+double imag(Complex x);
 
-  void operator+=(Complex);
-  void operator-=(Complex);
-  void operator*=(Complex);
-  void operator/=(Complex);
-  Complex operator+(Complex) const;
-  Complex operator-(Complex);
-  Complex operator*(Complex);
-  Complex operator/(Complex);
-  Complex exp(Complex);
-  Complex polar(double, double);
-  Complex sqrt(Complex);
-  double imag(Complex);
-  double real(Complex);
-  double norm(Complex);
-  double pow(Complex);
-  Complex tan(Complex);
-  Complex sin(Complex);
-  Complex cos(Complex);
-
- 
-  Complex conj(Complex);
-  double abs(Complex x);
+Complex exp(Complex x);
+Complex polar(double rho, double theta);
+Complex sqrt(Complex x);
+double norm(Complex x);
+Complex pow(Complex& base, Complex& exponent);
+Complex tan(Complex x);
+Complex sin(Complex x);
+Complex cos(Complex x);
+Complex conj(Complex x);
+double abs(Complex x);
 double arg(Complex x);
 Complex log(Complex x);
 Complex log10(Complex x);
 
-};
-
-#endif
+#endif  // COMPLEX_H

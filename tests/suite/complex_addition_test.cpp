@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 // Provides main() function
 
-#include "../../Complex/lib/complex_addition.cpp"
+#include "../../Complex/lib/complex.h"
 #include "../catch_amalgamated.hpp"
 // Test Fixture (Setup)
 TEST_CASE("ADDITION Test Case") {

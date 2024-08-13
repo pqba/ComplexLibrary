@@ -4,7 +4,7 @@
 #define EULER 2.71828182845904523536
 
 
-#include "../../Complex/lib/complex_norm.cpp"
+#include "../../Complex/lib/complex.h"
 #include "../catch_amalgamated.hpp"
 // Test Fixture (Setup)
 TEST_CASE("NORM Test Case") {

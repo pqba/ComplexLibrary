@@ -3,9 +3,7 @@
 
 
 #include "../catch_amalgamated.hpp"
-#include "../../Complex/lib/complex_log.cpp"
-#include "../../Complex/lib/complex_abs.cpp"
-#include "../../Complex/lib/complex_arg.cpp"
+#include "../../Complex/lib/complex.h"
 
 TEST_CASE("LOG Test Case") {
   Complex obj(3.0, 4.0);

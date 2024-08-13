@@ -1,9 +1,7 @@
 #define CATCH_CONFIG_MAIN
 // Provides main() function
 
-#include "../../Complex/lib/complex_log10.cpp"
-#include "../../Complex/lib/complex_abs.cpp"
-#include "../../Complex/lib/complex_arg.cpp"
+#include "../../Complex/lib/complex.h"
 #include "../catch_amalgamated.hpp"
 
 TEST_CASE("LOG10 Test Case") {
