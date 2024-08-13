@@ -1,8 +1,8 @@
 #define CATCH_CONFIG_MAIN
 // Provides main() function
 
-#include "../lib/complex_cos.cpp"
-#include "catch.hpp"
+#include "../../Complex/lib/complex_cos.cpp"
+#include "../catch_amalgamated.hpp"
 
 TEST_CASE("Example Test Case") {
   Complex obj = Complex(0,0);

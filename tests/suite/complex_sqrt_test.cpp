@@ -3,10 +3,10 @@
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
-#include "../lib/complex_sqrt.cpp"
-#include "catch_amalgamated.hpp"
+#include "../../Complex/lib/complex_sqrt.cpp"
+#include "../catch_amalgamated.hpp"
 // Test Fixture (Setup)
-TEST_CASE("Example Test Case") {
+TEST_CASE("SQRT Test Case") {
     Complex obj(5,12);
 // Act (Execution)
 Complex squaroot = sqrt(obj);

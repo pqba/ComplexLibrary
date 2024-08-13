@@ -2,13 +2,11 @@
 // Provides main() function
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
- 
-#include <cmath>
 
-#include "../lib/complex_polar.cpp"
-#include "catch_amalgamated.hpp"
+#include "../../Complex/lib/complex_polar.cpp"
+#include "../catch_amalgamated.hpp"
 // Test Fixture (Setup)
-TEST_CASE("Example Test Case") {
+TEST_CASE("POLAR Test Case") {
     Complex obj = polar(5.0, PI/4);
 // Act (Execution)
 double realnum = obj.r;

@@ -1,5 +1,6 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
+#include <cmath>
 
 class Complex{
 

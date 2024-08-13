@@ -3,11 +3,11 @@
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
-#include "../lib/complex_exp.cpp"
-#include "catch_amalgamated.hpp"
+#include "../../Complex/lib/complex_exp.cpp"
+#include "../catch_amalgamated.hpp"
 
 // Test Fixture (Setup)
-TEST_CASE("Example Test Case") {
+TEST_CASE("EXP Test Case") {
   Complex obj(PI,PI); // Instantiate class under test
 // Act (Execution) 
   double realnum = exp(obj).r;

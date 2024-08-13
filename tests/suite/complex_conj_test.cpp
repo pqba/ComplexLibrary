@@ -1,8 +1,8 @@
 #define CATCH_CONFIG_MAIN
 // Provides main() function
 
-#include "../lib/complex_conj.cpp"
-#include "catch_amalgamated.hpp"
+#include "../../Complex/lib/complex_conj.cpp"
+#include "../catch_amalgamated.hpp"
 
 TEST_CASE("Example Test Case") {
   Complex obj(3.0,4.0);

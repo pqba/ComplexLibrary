@@ -2,10 +2,10 @@
 #define CATCH_CONFIG_MAIN
 // Provides main() function
 
-#include "../lib/complex_multiplication.cpp"
-#include "catch_amalgamated.hpp"
+#include "../../Complex/lib/complex_multiplication.cpp"
+#include "../catch_amalgamated.hpp"
 // Test Fixture (Setup)
-TEST_CASE("Example Test Case") {
+TEST_CASE("MULTIPLICATION Test Case") {
     Complex obj(6.0,3.0); // Instantiate class under test
     Complex obj2(2.0,5.0);
 // Act (Execution)
