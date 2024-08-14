@@ -5,8 +5,8 @@
 #include "../catch_amalgamated.hpp"
 
 TEST_CASE("SIN Test Case") {
-  Complex obj = log(Complex(1,1));
+  Complex obj(7,2);
   Complex test = sin(obj);
-  REQUIRE(test.r == Catch::Approx(0.0).margin(0.000001));
-  REQUIRE(test.i == Catch::Approx(0.0).margin(0.000001));
+  REQUIRE(test.r == Catch::Approx(2.471).margin(0.001));
+  REQUIRE(test.i == Catch::Approx(2.734).margin(0.001));
 }

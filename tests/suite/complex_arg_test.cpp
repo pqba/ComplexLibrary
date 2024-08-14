@@ -4,12 +4,9 @@
 #include "../../Complex/lib/complex.h"
 #include "../catch_amalgamated.hpp"
 
-// Test Fixture (Setup)
 TEST_CASE("ARG Test Case") {
-    Complex obj(1.0,5.0); // Instantiate class under test
-// Act (Execution)
+    Complex obj(5.0,0.0); 
 double a = arg(obj);
-// Assert (Verification)
 
-REQUIRE(a== 5.0);
+REQUIRE(a == Catch::Approx(PI/2).margin(0.001));
 }

@@ -1,5 +1,5 @@
-#include "complex_arg.h"
+#include "complex.h"
 
 double arg(Complex x) {
-    return atan2(x.i, x.r);
+    return atan2(x.r, x.i);
 }

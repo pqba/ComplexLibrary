@@ -1,5 +1,7 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
+#define PI 3.1415926538979323846
+#define EULER 2.71828182845904523536
 
 #include <cmath>
 
