@@ -1,16 +1,14 @@
-#include <cstdlib>
 #include <iostream>
 #include "../lib/complex.h"
 #include "fac.h"
 
-#define PI 3.1415926538979323846
-#define EULER 2.71828182845904523536
-
-int bruh() {
-    std::cout << "Hello World" << std::endl;
+int main(void) {
+    std::cout << "Hello Complex Example" << std::endl;
 
     std::cout << "Factorial test " << Factorial(5) << std::endl;
 
-    Complex a(5.0,6.0),b;
+    Complex a(4.0,6.0);
+    Complex b(5.0,-3.0);
+    std::cout << "Multiplied: " << a * b << "\n";
     return 0;
 }

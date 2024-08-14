@@ -4,6 +4,7 @@
 #define EULER 2.71828182845904523536
 
 #include <cmath>
+#include <ostream>
 
 class Complex {
    public:
@@ -13,7 +14,12 @@ class Complex {
     Complex() : r(0.0), i(0.0) {}
     Complex(double realnum, double imaginarynum) : r(realnum), i(imaginarynum) {}
 
-    // Member functions that modify the object
+
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c) {
+        os << "Complex(" << c.r << (c.i >= 0 ? " + " : " - ") << std::abs(c.i) << "i)";
+        return os;
+    }
+    // Member functions 
     Complex operator+(Complex rhs);
     Complex operator-(Complex rhs);
     Complex operator*(Complex rhs);
@@ -32,7 +38,7 @@ Complex exp(Complex x);
 Complex polar(double rho, double theta);
 Complex sqrt(Complex x);
 double norm(Complex x);
-Complex pow(Complex& base, Complex& exponent);
+double pow(double a, double b);
 Complex tan(Complex x);
 Complex sin(Complex x);
 Complex cos(Complex x);
